@@ -1,73 +1,65 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>روضة ومدرسة السلام الابتدائية للبنات</title>
-  <meta name="description" content="الموقع الإلكتروني لروضة ومدرسة السلام الابتدائية للبنات: الرؤية، الرسالة، الأخبار، الأقسام، الأنشطة، ومعرض مجلة السلام.">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>روضة ومدرسة السلام الابتدائية للبنات</title>
+<meta name="description" content="موقع مدرسة السلام الابتدائية للبنات: أقسام، تقارير، أنشطة، ومعرض مجلة السلام.">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="intro" class="intro">
-    <div class="curtain curtain-right"></div><div class="curtain curtain-left"></div><div class="spotlight"></div>
-    <div class="intro-content">
-      <span>روضة ومدرسة السلام الابتدائية للبنات</span>
-      <h1>مجلة السلام</h1><p>الإصدار الثاني 2025 - 2026</p>
-      <button id="enterSite">دخول الموقع</button>
-    </div>
+<div id="intro" class="intro">
+  <div class="curtain curtain-right"></div><div class="curtain curtain-left"></div><div class="spotlight"></div>
+  <div class="intro-content"><span>روضة ومدرسة السلام الابتدائية للبنات</span><h1>مجلة السلام</h1><p>الإصدار الثاني 2025 - 2026</p><button id="enterSite">دخول الموقع</button></div>
+</div>
+
+<header class="site-header">
+  <a class="brand" href="index.html"><span class="brand-mark">س</span><span><b>مدرسة السلام الابتدائية</b><small>للبنات</small></span></a>
+  <nav id="nav"><a href="#home">الرئيسية</a><a href="#about">عن المدرسة</a><a href="#reports">الأقسام والتقارير</a><a href="magazine.html">المجلة</a><a href="#contact">تواصل معنا</a></nav>
+  <div class="header-actions"><button id="soundBtn" title="الصوت">🔊</button><button id="themeBtn">◐</button><button id="menuBtn">☰</button></div>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div class="hero-copy"><span class="eyebrow">بيئة تعليمية شاملة ومبتكرة</span>
+  <h1>موقع مدرسي يعرض الإنجازات والأنشطة بتجربة تفاعلية</h1>
+  <p>اضغطي على أي قسم لعرض تقريره، وصفحاته المرتبطة، وصوره في نافذة تفاعلية مصحوبة بصوت افتتاح خفيف.</p>
+  <div class="hero-actions"><a class="btn" href="#reports">استعراض الأقسام</a><a class="btn outline" href="magazine.html">معرض المجلة</a></div></div>
+  <div class="hero-visual"><img src="assets/pages/page-01.jpg" alt="غلاف مجلة السلام"></div>
+</section>
+
+<section class="quick-stats"><div><b>2025–2026</b><span>الإصدار الثاني</span></div><div><b>13</b><span>قسمًا تفاعليًا</span></div><div><b>71</b><span>صفحة موثقة</span></div><div><b>تقارير</b><span>لكل قسم</span></div></section>
+
+<section id="about" class="about">
+  <div class="section-head"><span class="eyebrow">عن المدرسة</span><h2>رؤية ورسالة تقودان العمل المدرسي</h2></div>
+  <div class="about-grid">
+    <article class="info-card"><h3>الرؤية</h3><p>متعلم ريادي لتنمية مستدامة.</p></article>
+    <article class="info-card"><h3>الرسالة</h3><p>نرسي بيئة تعليمية شاملة ومبتكرة تعزز القيم والأخلاق وتؤهل المتعلم بمهارات عالية لإعداد جيل واعٍ قادر على بناء مجتمع متقدم واقتصاد مزدهر.</p></article>
+    <article class="info-card image-card"><img src="assets/pages/page-03.jpg" alt="الرؤية والرسالة"></article>
   </div>
+</section>
 
-  <header class="site-header">
-    <a class="brand" href="index.html"><span class="brand-mark">س</span><span><b>مدرسة السلام الابتدائية</b><small>للبنات</small></span></a>
-    <nav id="nav"><a href="#home">الرئيسية</a><a href="#about">عن المدرسة</a><a href="#sections">الأقسام</a><a href="#news">الأخبار</a><a href="#magazine">المجلة</a><a href="#contact">تواصل معنا</a></nav>
-    <div class="header-actions"><button id="themeBtn">◐</button><button id="menuBtn">☰</button></div>
-  </header>
+<section id="reports" class="reports">
+  <div class="section-head row"><div><span class="eyebrow">الأقسام والتقارير</span><h2>اضغطي على القسم لفتح التقرير</h2></div><a class="text-link" href="magazine.html">مشاهدة كل الصفحات</a></div>
+  <div class="reports-grid" id="reportsGrid"></div>
+</section>
 
-  <main id="home">
-    <section class="hero">
-      <div class="hero-copy">
-        <span class="eyebrow">بيئة تعليمية شاملة ومبتكرة</span>
-        <h1>نرسي تعلّمًا ملهمًا يصنع أثرًا في الطالبات والمجتمع المدرسي</h1>
-        <p>موقع إلكتروني متكامل يعرض هوية المدرسة، إنجازاتها، أنشطتها، أقسامها، ومحتوى مجلة السلام بصورة حديثة وسهلة التصفح.</p>
-        <div class="hero-actions"><a class="btn" href="#magazine">استعراض المجلة</a><a class="btn outline" href="#news">آخر الأخبار</a></div>
-      </div>
-      <div class="hero-visual"><img src="assets/pages/page-01.jpg" alt="غلاف مجلة السلام"></div>
-    </section>
+<section class="principal">
+  <div><span class="eyebrow">كلمة مديرة المدرسة</span><h2>مرآة صادقة لأنشطة المدرسة وإنجازاتها</h2><p>تأتي مجلة السلام استمرارًا لمسيرة تربوية هادفة إلى تنمية الإبداع، وصقل المواهب، وتعزيز روح البحث والكتابة لدى الطالبات.</p></div>
+  <img src="assets/pages/page-04.jpg" alt="كلمة مديرة المدرسة">
+</section>
 
-    <section class="quick-stats">
-      <div><b>2025–2026</b><span>الإصدار الثاني</span></div><div><b>12+</b><span>مجالًا مدرسيًا</span></div><div><b>71</b><span>صفحة موثقة</span></div><div><b>مجلة السلام</b><span>ذاكرة الإنجاز المدرسي</span></div>
-    </section>
+<section id="contact" class="contact"><div class="contact-card"><span class="eyebrow">تواصل معنا</span><h2>روضة ومدرسة السلام الابتدائية للبنات</h2><p>يمكن تخصيص هذه المساحة لاحقًا لإضافة البريد الإلكتروني، روابط الحسابات الرسمية، ورقم الهاتف.</p><div class="contact-links"><a href="#">البريد الإلكتروني</a><a href="#">إنستغرام</a><a href="#">يوتيوب</a><a href="#">منصة المدرسة</a></div></div></section>
+</main>
 
-    <section id="about" class="about">
-      <div class="section-head"><span class="eyebrow">عن المدرسة</span><h2>رؤية ورسالة تقودان العمل المدرسي</h2></div>
-      <div class="about-grid">
-        <article class="info-card"><h3>الرؤية</h3><p>متعلم ريادي لتنمية مستدامة.</p></article>
-        <article class="info-card"><h3>الرسالة</h3><p>نرسي بيئة تعليمية شاملة ومبتكرة تعزز القيم والأخلاق وتؤهل المتعلم بمهارات عالية لإعداد جيل واعٍ قادر على بناء مجتمع متقدم واقتصاد مزدهر.</p></article>
-        <article class="info-card image-card"><img src="assets/pages/page-03.jpg" alt="الرؤية والرسالة"></article>
-      </div>
-    </section>
+<div class="report-modal" id="reportModal">
+  <div class="report-box">
+    <button id="closeReport" class="close">×</button>
+    <div class="report-header"><img id="reportCover" alt=""><div><span id="reportBadge"></span><h2 id="reportTitle"></h2><p id="reportText"></p></div></div>
+    <h3>الصفحات المرتبطة بالتقرير</h3><div class="report-pages" id="reportPages"></div>
+  </div>
+</div>
 
-    <section id="sections" class="sections"><div class="section-head"><span class="eyebrow">مجالات العمل</span><h2>أقسام وأنشطة المدرسة</h2></div><div class="section-grid" id="sectionsGrid"></div></section>
-
-    <section id="news" class="news">
-      <div class="section-head row"><div><span class="eyebrow">آخر المستجدات</span><h2>أخبار وأنشطة من مجلة السلام</h2></div><a class="text-link" href="#magazine">مشاهدة الصفحات الأصلية</a></div>
-      <div class="news-grid" id="newsGrid"></div>
-    </section>
-
-    <section class="principal">
-      <div><span class="eyebrow">كلمة مديرة المدرسة</span><h2>مرآة صادقة لأنشطة المدرسة وإنجازاتها</h2><p>تأتي مجلة السلام استمرارًا لمسيرة تربوية هادفة إلى تنمية الإبداع، وصقل المواهب، وتعزيز روح البحث والكتابة لدى الطالبات، في بيئة تعليمية محفزة تجمع بين المعرفة والمتعة.</p></div>
-      <img src="assets/pages/page-04.jpg" alt="كلمة مديرة المدرسة">
-    </section>
-
-    <section id="magazine" class="magazine">
-      <div class="section-head row"><div><span class="eyebrow">مجلة السلام</span><h2>استعراض صفحات الإصدار الثاني</h2></div><a class="btn small" href="magazine.html">فتح معرض المجلة</a></div>
-      <div class="magazine-strip" id="magazineStrip"></div>
-    </section>
-
-    <section id="contact" class="contact"><div class="contact-card"><span class="eyebrow">تواصل معنا</span><h2>روضة ومدرسة السلام الابتدائية للبنات</h2><p>يمكن تخصيص هذه المساحة لاحقًا لإضافة البريد الإلكتروني، روابط الحسابات الرسمية، ورقم الهاتف.</p><div class="contact-links"><a href="#">البريد الإلكتروني</a><a href="#">إنستغرام</a><a href="#">يوتيوب</a><a href="#">منصة المدرسة</a></div></div></section>
-  </main>
-
-  <div class="modal" id="modal"><button id="closeModal">×</button><img id="modalImg" alt="صفحة مكبرة"></div>
-  <footer><p>© 2026 روضة ومدرسة السلام الابتدائية للبنات. جميع الحقوق محفوظة.</p><p class="sig">Designed with kamel3lom style.</p></footer>
-  <script src="data.js"></script><script src="script.js"></script>
-</body>
-</html>
+<div class="modal" id="modal"><button id="closeModal">×</button><img id="modalImg" alt="صفحة مكبرة"></div>
+<footer><p>© 2026 روضة ومدرسة السلام الابتدائية للبنات. جميع الحقوق محفوظة.</p><p class="sig">Designed with kamel3lom style.</p></footer>
+<script src="data.js"></script><script src="script.js"></script>
+</body></html>

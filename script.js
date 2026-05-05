@@ -1,44 +1,11 @@
 
-const $ = s => document.querySelector(s);
-const pages = window.SCHOOL_PAGES || [];
-const news = window.SCHOOL_NEWS || [];
-const sections = window.SCHOOL_SECTIONS || [];
-
-function initIntro(){
-  const intro = $('#intro'), btn = $('#enterSite');
-  if(!intro) return;
-  if(sessionStorage.getItem('introSeen') === 'yes'){ intro.classList.add('hide'); return; }
-  btn?.addEventListener('click', () => {
-    intro.classList.add('open');
-    setTimeout(()=>{ intro.classList.add('hide'); sessionStorage.setItem('introSeen','yes'); }, 1200);
-  });
-}
-function initCommon(){
-  if(localStorage.getItem('schoolTheme') === 'dark') document.body.classList.add('dark');
-  $('#themeBtn')?.addEventListener('click',()=>{document.body.classList.toggle('dark');localStorage.setItem('schoolTheme',document.body.classList.contains('dark')?'dark':'light')});
-  $('#menuBtn')?.addEventListener('click',()=>$('#nav')?.classList.toggle('open'));
-}
-function initHome(){
-  if($('#sectionsGrid')) $('#sectionsGrid').innerHTML = sections.map(s=>`<article class="section-card"><img src="${s[2]}" alt="${s[0]}" loading="lazy"><div><h3>${s[0]}</h3><p>${s[1]}</p></div></article>`).join('');
-  if($('#newsGrid')) $('#newsGrid').innerHTML = news.map(n=>`<article class="news-card"><img src="${n[2]}" alt="${n[0]}" loading="lazy"><div><span>${n[1]}</span><h3>${n[0]}</h3><p>${n[3]}</p></div></article>`).join('');
-  if($('#magazineStrip')){
-    const picks=[0,1,2,3,4,5,6,9,12,21,27,32,34,44,48,51];
-    $('#magazineStrip').innerHTML = picks.filter(i=>pages[i]).map(i=>`<div class="page-thumb" data-src="${pages[i]}"><img src="${pages[i]}" alt="صفحة ${i+1}" loading="lazy"><b>${i+1}</b></div>`).join('');
-    bindModal();
-  }
-}
-function initGallery(){
-  if(!$('#galleryGrid')) return;
-  function render(){
-    const q=($('#pageSearch')?.value||'').trim();
-    const list=pages.map((src,i)=>({src,num:i+1})).filter(x=>!q||String(x.num).includes(q));
-    $('#galleryGrid').innerHTML=list.map(x=>`<article class="gallery-item" data-src="${x.src}"><img src="${x.src}" alt="صفحة ${x.num}" loading="lazy"><p>صفحة ${x.num}</p></article>`).join('');
-    bindModal();
-  }
-  $('#pageSearch')?.addEventListener('input',render); render();
-}
-function bindModal(){document.querySelectorAll('[data-src]').forEach(el=>{el.onclick=()=>openModal(el.dataset.src)})}
-function openModal(src){$('#modalImg').src=src;$('#modal').classList.add('open')}
-function initModal(){$('#closeModal')?.addEventListener('click',()=>$('#modal').classList.remove('open'));$('#modal')?.addEventListener('click',e=>{if(e.target.id==='modal')$('#modal').classList.remove('open')})}
-initIntro();initCommon();initModal();initHome();initGallery();
+const $=s=>document.querySelector(s);const pages=window.SCHOOL_PAGES||[];const reports=window.REPORTS||[];let soundOn=true;
+function playSound(){if(!soundOn)return;try{const c=new(window.AudioContext||window.webkitAudioContext)(),o=c.createOscillator(),g=c.createGain();o.type='sine';o.frequency.setValueAtTime(620,c.currentTime);o.frequency.exponentialRampToValueAtTime(340,c.currentTime+.22);g.gain.setValueAtTime(.06,c.currentTime);g.gain.exponentialRampToValueAtTime(.001,c.currentTime+.25);o.connect(g);g.connect(c.destination);o.start();o.stop(c.currentTime+.26)}catch(e){}}
+function init(){const intro=$('#intro');if(intro&&sessionStorage.getItem('introSeen')==='yes')intro.classList.add('hide');$('#enterSite')?.addEventListener('click',()=>{playSound();intro.classList.add('open');setTimeout(()=>{intro.classList.add('hide');sessionStorage.setItem('introSeen','yes')},1200)});if(localStorage.getItem('schoolTheme')==='dark')document.body.classList.add('dark');$('#themeBtn')?.addEventListener('click',()=>{document.body.classList.toggle('dark');localStorage.setItem('schoolTheme',document.body.classList.contains('dark')?'dark':'light')});$('#menuBtn')?.addEventListener('click',()=>$('#nav')?.classList.toggle('open'));$('#soundBtn')?.addEventListener('click',e=>{soundOn=!soundOn;e.currentTarget.textContent=soundOn?'🔊':'🔇'});renderReports();renderGallery();bindClose();}
+function renderReports(){if(!$('#reportsGrid'))return;$('#reportsGrid').innerHTML=reports.map(r=>`<article class="report-card" data-report="${r.id}"><img src="${r.cover}" alt="${r.title}"><div><span>${r.icon} ${r.title}</span><h3>${r.subtitle}</h3><p>اضغطي لعرض التقرير والصفحات المرتبطة.</p></div></article>`).join('');document.querySelectorAll('[data-report]').forEach(el=>el.onclick=()=>openReport(el.dataset.report))}
+function openReport(id){const r=reports.find(x=>x.id===id);if(!r)return;playSound();$('#reportCover').src=r.cover;$('#reportBadge').textContent=r.icon+' '+r.title;$('#reportTitle').textContent=r.subtitle;$('#reportText').textContent=r.report;$('#reportPages').innerHTML=r.pagePaths.map((p,i)=>`<img src="${p}" data-src="${p}" alt="صفحة ${r.pages[i]}">`).join('');$('#reportModal').classList.add('open');bindImages();}
+function renderGallery(){if(!$('#galleryGrid'))return;function draw(){const q=($('#pageSearch')?.value||'').trim();const list=pages.map((src,i)=>({src,num:i+1})).filter(x=>!q||String(x.num).includes(q));$('#galleryGrid').innerHTML=list.map(x=>`<article class="gallery-item" data-src="${x.src}"><img src="${x.src}" alt="صفحة ${x.num}"><p>صفحة ${x.num}</p></article>`).join('');bindImages()}$('#pageSearch')?.addEventListener('input',draw);draw()}
+function bindImages(){document.querySelectorAll('[data-src]').forEach(el=>{el.onclick=e=>{e.stopPropagation();playSound();$('#modalImg').src=el.dataset.src;$('#modal').classList.add('open')}})}
+function bindClose(){$('#closeReport')?.addEventListener('click',()=>$('#reportModal').classList.remove('open'));$('#reportModal')?.addEventListener('click',e=>{if(e.target.id==='reportModal')$('#reportModal').classList.remove('open')});$('#closeModal')?.addEventListener('click',()=>$('#modal').classList.remove('open'));$('#modal')?.addEventListener('click',e=>{if(e.target.id==='modal')$('#modal').classList.remove('open')})}
+init();
 // kamel3lom

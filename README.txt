@@ -1,21 +1,18 @@
-موقع مدرسة السلام الابتدائية - نسخة نهائية متكاملة
+موقع مدرسة السلام - نسخة تفاعلية بالتقارير والصوت
 
-الملفات:
-index.html - الرئيسية مع افتتاحية ستارة سينمائية
-magazine.html - معرض صفحات مجلة السلام
-style.css - التصميم
-script.js - التفاعل
-data.js - بيانات الصور والأخبار
-assets/pages - صور صفحات المجلة
+الجديد:
+- كل قسم قابل للضغط.
+- عند الضغط يظهر تقرير القسم والصفحات المرتبطة به.
+- صوت افتتاح خفيف عند فتح التقرير أو تكبير الصورة.
+- صور واجهات مبتكرة لكل قسم داخل assets/covers.
+- معرض كامل لصفحات المجلة داخل magazine.html.
 
-طريقة الرفع على GitHub:
-1. فكّي الضغط.
-2. ارفعي محتويات المجلد إلى GitHub، وليس ملف ZIP نفسه.
-3. يجب أن تظهر الملفات مباشرة في المستودع:
-   index.html
-   magazine.html
-   style.css
-   script.js
-   data.js
-   assets
-4. Settings > Pages > Deploy from a branch > main > /(root) > Save
+طريقة الرفع:
+ارفعي محتويات المجلد مباشرة إلى GitHub:
+index.html
+magazine.html
+style.css
+script.js
+data.js
+assets
+ثم Settings > Pages > main > /(root) > Save.
