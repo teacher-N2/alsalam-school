@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>منصة السلام الرقمية</title>
+<meta name="description" content="منصة رقمية تعرض أخبار وإنجازات مدرسة السلام الابتدائية للبنات بأسلوب تفاعلي حديث يعكس الهوية الوطنية.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="cinema" id="cinema">
+  <div class="curtain right"></div><div class="curtain left"></div><div class="light"></div>
+  <div class="cinema-text"><img class="intro-logo" src="assets/img/school-logo.jpg" alt="شعار المدرسة"><span>روضة ومدرسة السلام الابتدائية للبنات</span><h1>منصة السلام الرقمية</h1><p>أخبار وإنجازات ومبادرات في تجربة تفاعلية واحدة.</p><button id="startBtn">ابدئي التصفح</button></div>
+</div>
+<header class="header">
+  <a class="brand" href="index.html"><img class="brand-img" src="assets/img/school-logo.jpg" alt="شعار المدرسة"><span><b>مدرسة السلام الابتدائية</b><small>منصة الإنجازات الرقمية</small></span></a>
+  <nav id="topNav"><a href="#home">الرئيسية</a><a href="#identity">هوية السلام</a><a href="#achievements">الإنجازات</a><a href="#tabbed">الأقسام</a><a href="magazine.html">المجلة</a><a href="#contact">تواصل</a></nav>
+  <div class="actions"><button id="soundBtn">🔊</button><button id="themeBtn">◐</button><button id="menuBtn">☰</button></div>
+</header>
+<main id="home">
+<section class="hero reveal platform-hero">
+  <div class="hero-text">
+    <span class="label">منصة إنجازات رقمية</span>
+    <h1>موقع يعرض أخبار وإنجازات مدرسة السلام بأسلوب مجلة رقمية حديثة</h1>
+    <p>منصة رقمية حديثة تعرض أخبار مدرسة السلام وإنجازاتها ومبادراتها التعليمية بأسلوب تفاعلي أنيق يعكس هوية المدرسة ورسالتها التربوية.</p>
+    <div class="hero-buttons"><a class="btn" href="#tabbed">استكشفي الأقسام</a><a class="btn alt" href="magazine.html">تصفحي المجلة</a></div>
+  </div>
+  <div class="hero-stage"><div class="feature-card"><img src="assets/tab-covers/overview.jpg" alt="سلامة ومنصة السلام"><span>سلامة ترشدكِ داخل المنصة</span></div><div class="floating-note">كل قسم يعرض تقريره وصفحاته المرتبطة مباشرة</div></div>
+</section>
+<section id="identity" class="identity-section reveal">
+  <div class="section-head center"><span class="label">هوية السلام</span><h2>تعليم يرسخ القيم الوطنية ويصنع أثرًا مستدامًا</h2><p>في مدرسة السلام نؤمن أن التعليم رحلة لبناء جيل مبدع، معتز بلغته، منتمٍ لوطنه، ومؤمن بقدراته.</p></div>
+  <div class="identity-grid">
+    <article><span>الرؤية</span><h3>متعلم ريادي لتنمية مستدامة</h3><p>بيئة تعليمية تشجع المبادرة والريادة وتربط التعلم بالحياة.</p></article>
+    <article><span>الرسالة</span><h3>بيئة تعليمية شاملة ومبتكرة</h3><p>نرسخ القيم والأخلاق ونؤهل المتعلمات بمهارات عالية لمستقبل واعد.</p></article>
+    <article class="national-card"><span>الهوية الوطنية</span><h3>عنابي قطر وروح الانتماء</h3><p>تظهر الهوية القطرية في اللون والزخرفة والمعنى والرسالة.</p></article>
+  </div>
+</section>
+<section id="achievements" class="achievement-stats reveal">
+  <div><b data-count="120">0</b><span>نشاطًا مدرسيًا</span></div><div><b data-count="85">0</b><span>طالبة مكرمة</span></div><div><b data-count="40">0</b><span>برنامجًا توعويًا</span></div><div><b data-count="15">0</b><span>مبادرة وطنية</span></div>
+</section>
+<section id="explore" class="portal reveal">
+  <div class="section-head center"><span class="label">بوابة الاستكشاف</span><h2>سلامة تقودكِ إلى أقسام المدرسة</h2><p>بطاقات هادئة وخفيفة بصريًا، بلا تكرار نصي، وبلمسات قطرية عنابية.</p></div>
+  <div class="portal-tabs" id="portalTabs"></div>
+</section>
+<section id="tabbed" class="tabbed reveal">
+  <div class="section-head center"><span class="label">التقارير التفاعلية</span><h2>اختاري القسم لعرض التقرير والصفحات</h2></div>
+  <div class="tabs-shell"><aside class="side-tabs" id="sideTabs"></aside><section class="tab-content" id="tabContent"></section></div>
+</section>
+<section class="featured reveal"><div class="section-head"><span class="label">إنجازات مميزة</span><h2>من التوثيق إلى صناعة الأثر</h2></div><div class="featured-grid"><article><b>اللغة والهوية</b><span>مشروعات لغوية تعزز الانتماء.</span></article><article><b>البحث والابتكار</b><span>تنمية التفكير العلمي لدى الطالبات.</span></article><article><b>الشراكة المجتمعية</b><span>برامج تثقيفية وتوعوية متنوعة.</span></article></div></section>
+<section class="showcase reveal"><div class="section-head row"><div><span class="label">مجلة السلام</span><h2>صفحات مختارة</h2></div><a class="text-link" href="magazine.html">فتح المعرض الكامل</a></div><div class="page-carousel" id="pageCarousel"></div></section>
+<section id="contact" class="contact reveal"><div class="contact-card"><span class="label">تواصل معنا</span><h2>روضة ومدرسة السلام الابتدائية للبنات</h2><p>يمكن لاحقًا ربط هذه المساحة بحسابات المدرسة الرسمية والبريد الإلكتروني.</p><div><a>البريد الإلكتروني</a><a>إنستغرام</a><a>يوتيوب</a><a>منصة المدرسة</a></div></div></section>
+</main>
+<div class="report-modal" id="reportModal"><div class="report-panel"><button class="close" id="closeReport">×</button><div id="reportPanelContent"></div></div></div>
+<div class="image-modal" id="imageModal"><button id="closeImage">×</button><img id="bigImage" alt="صفحة مكبرة"></div><button class="top-btn" id="topBtn">↑</button>
+<footer><img class="footer-logo" src="assets/img/school-logo.jpg" alt="شعار المدرسة"><p>© 2026 روضة ومدرسة السلام الابتدائية للبنات. جميع الحقوق محفوظة.</p></footer>
+<script src="data.js"></script><script src="script.js"></script>
+</body></html>
