@@ -20,14 +20,15 @@ window.REPORTS=[
       "assets/pages/page-04.jpg",
       "assets/pages/page-05.jpg"
     ],
-    "report": "تعرض هذه البوابة هوية مجلة السلام ومقدمة الإصدار ومحتوياته الرئيسة، لتكون مدخلًا بصريًا منظمًا لكل أقسام الموقع."
+    "report": "تعرض هذه البوابة هوية مجلة السلام ومقدمة الإصدار ومحتوياته الرئيسة، لتكون مدخلًا بصريًا منظمًا لكل أقسام الموقع.",
+    "salamaVisual": "assets/salama-panels/all-sections.jpg"
   },
   {
     "id": "admin",
     "title": "الإدارة",
     "subtitle": "قيادة وتطوير",
     "icon": "🏫",
-    "cover": "assets/covers/admin.svg",
+    "cover": "assets/salama-panels/admin.jpg",
     "pages": [
       4,
       6,
@@ -42,7 +43,8 @@ window.REPORTS=[
       "assets/pages/page-08.jpg",
       "assets/pages/page-09.jpg"
     ],
-    "report": "يعرض هذا القسم جهود الإدارة المدرسية في دعم التحصيل الأكاديمي وتنظيم المبادرات والفعاليات، ومنها دروس التقوية ومسابقة الزهراوين وكلمة مديرة المدرسة."
+    "report": "يعرض هذا القسم جهود الإدارة المدرسية في دعم التحصيل الأكاديمي وتنظيم المبادرات والفعاليات، ومنها دروس التقوية ومسابقة الزهراوين وكلمة مديرة المدرسة.",
+    "salamaVisual": "assets/salama-panels/admin.jpg"
   },
   {
     "id": "international",
@@ -88,14 +90,15 @@ window.REPORTS=[
       "assets/pages/page-25.jpg",
       "assets/pages/page-26.jpg"
     ],
-    "report": "يوثق القسم فعاليات اليوم الدولي للتعليم بمشاركة الأقسام وأولياء الأمور، من خلال أركان تعليمية متنوعة ربطت التعلم بالمهارات والقيم والإبداع."
+    "report": "يوثق القسم فعاليات اليوم الدولي للتعليم بمشاركة الأقسام وأولياء الأمور، من خلال أركان تعليمية متنوعة ربطت التعلم بالمهارات والقيم والإبداع.",
+    "salamaVisual": "assets/salama-panels/learning.jpg"
   },
   {
     "id": "arabic",
     "title": "قسم اللغة العربية",
     "subtitle": "لغة وهوية وإبداع",
     "icon": "ض",
-    "cover": "assets/covers/arabic.svg",
+    "cover": "assets/salama-panels/arabic.jpg",
     "pages": [
       22,
       33,
@@ -106,14 +109,15 @@ window.REPORTS=[
       "assets/pages/page-33.jpg",
       "assets/pages/page-38.jpg"
     ],
-    "report": "يتناول القسم أنشطة اللغة العربية مثل الأركان التعليمية والفوازير الرمضانية، بما يعزز مهارات القراءة والكتابة والتواصل اللغوي بأسلوب تفاعلي."
+    "report": "يتناول القسم أنشطة اللغة العربية مثل الأركان التعليمية والفوازير الرمضانية، بما يعزز مهارات القراءة والكتابة والتواصل اللغوي بأسلوب تفاعلي.",
+    "salamaVisual": "assets/salama-panels/arabic.jpg"
   },
   {
     "id": "sports",
     "title": "اليوم الرياضي",
     "subtitle": "صحة وتعاون وانتماء",
     "icon": "⚽",
-    "cover": "assets/covers/sports.svg",
+    "cover": "assets/salama-panels/sports.jpg",
     "pages": [
       27,
       28,
@@ -128,7 +132,8 @@ window.REPORTS=[
       "assets/pages/page-30.jpg",
       "assets/pages/page-31.jpg"
     ],
-    "report": "يوثق القسم فعاليات اليوم الرياضي للدولة، من عروض ومسابقات وشراكات مجتمعية مع اتحادات رياضية."
+    "report": "يوثق القسم فعاليات اليوم الرياضي للدولة، من عروض ومسابقات وشراكات مجتمعية مع اتحادات رياضية.",
+    "salamaVisual": "assets/salama-panels/sports.jpg"
   },
   {
     "id": "ramadan",
@@ -144,14 +149,15 @@ window.REPORTS=[
       "assets/pages/page-32.jpg",
       "assets/pages/page-33.jpg"
     ],
-    "report": "يعرض القسم تفعيل الفوازير الرمضانية عبر منصة قطر للتعليم، بهدف إحياء أجواء رمضان وزيادة المعرفة والثقافة الإسلامية."
+    "report": "يعرض القسم تفعيل الفوازير الرمضانية عبر منصة قطر للتعليم، بهدف إحياء أجواء رمضان وزيادة المعرفة والثقافة الإسلامية.",
+    "salamaVisual": "assets/salama-panels/arabic.jpg"
   },
   {
     "id": "honor",
     "title": "تكريم الطالبات",
     "subtitle": "تحفيز وتميز",
     "icon": "🏆",
-    "cover": "assets/covers/honor.svg",
+    "cover": "assets/salama-panels/honor.jpg",
     "pages": [
       34,
       35,
@@ -176,14 +182,15 @@ window.REPORTS=[
       "assets/pages/page-42.jpg",
       "assets/pages/page-43.jpg"
     ],
-    "report": "يوثق القسم تكريم الطالبات المتفوقات والملتزمات والمتحسنات أكاديميًا، تعزيزًا للدافعية والاستمرار في الإنجاز."
+    "report": "يوثق القسم تكريم الطالبات المتفوقات والملتزمات والمتحسنات أكاديميًا، تعزيزًا للدافعية والاستمرار في الإنجاز.",
+    "salamaVisual": "assets/salama-panels/honor.jpg"
   },
   {
     "id": "research",
     "title": "البحث العلمي",
     "subtitle": "تفكير وابتكار",
     "icon": "🔬",
-    "cover": "assets/covers/research.svg",
+    "cover": "assets/salama-panels/research.jpg",
     "pages": [
       44,
       45,
@@ -198,14 +205,15 @@ window.REPORTS=[
       "assets/pages/page-47.jpg",
       "assets/pages/page-48.jpg"
     ],
-    "report": "يعرض القسم معرض البحث العلمي والابتكار ومشاركة الطالبات في مسابقات الباحث الواعد والبحث العلمي."
+    "report": "يعرض القسم معرض البحث العلمي والابتكار ومشاركة الطالبات في مسابقات الباحث الواعد والبحث العلمي.",
+    "salamaVisual": "assets/salama-panels/research.jpg"
   },
   {
     "id": "trips",
     "title": "الرحلات المدرسية",
     "subtitle": "تعلم خارج الصف",
     "icon": "🚌",
-    "cover": "assets/covers/trips.svg",
+    "cover": "assets/salama-panels/trips.jpg",
     "pages": [
       49,
       50,
@@ -216,14 +224,15 @@ window.REPORTS=[
       "assets/pages/page-50.jpg",
       "assets/pages/page-51.jpg"
     ],
-    "report": "يوثق القسم الرحلات التعليمية والترفيهية التي تربط التعلم بالتجربة الواقعية وتنمي الثقة بالنفس ومهارات التواصل."
+    "report": "يوثق القسم الرحلات التعليمية والترفيهية التي تربط التعلم بالتجربة الواقعية وتنمي الثقة بالنفس ومهارات التواصل.",
+    "salamaVisual": "assets/salama-panels/trips.jpg"
   },
   {
     "id": "workshops",
     "title": "ورش ومحاضرات",
     "subtitle": "توعية وشراكة",
     "icon": "🩺",
-    "cover": "assets/covers/workshops.svg",
+    "cover": "assets/salama-panels/workshops.jpg",
     "pages": [
       52,
       53,
@@ -238,7 +247,8 @@ window.REPORTS=[
       "assets/pages/page-55.jpg",
       "assets/pages/page-56.jpg"
     ],
-    "report": "يعرض القسم الورش والمحاضرات التوعوية التي تدعم الصحة والسلامة وتنمي الوعي لدى الطالبات والموظفات."
+    "report": "يعرض القسم الورش والمحاضرات التوعوية التي تدعم الصحة والسلامة وتنمي الوعي لدى الطالبات والموظفات.",
+    "salamaVisual": "assets/salama-panels/workshops.jpg"
   },
   {
     "id": "competitions",
@@ -258,7 +268,8 @@ window.REPORTS=[
       "assets/pages/page-59.jpg",
       "assets/pages/page-60.jpg"
     ],
-    "report": "يوثق القسم المسابقات المدرسية التي تعزز روح التحدي والإبداع والمشاركة بين الطالبات."
+    "report": "يوثق القسم المسابقات المدرسية التي تعزز روح التحدي والإبداع والمشاركة بين الطالبات.",
+    "salamaVisual": "assets/salama-panels/honor.jpg"
   },
   {
     "id": "health",
@@ -276,7 +287,8 @@ window.REPORTS=[
       "assets/pages/page-62.jpg",
       "assets/pages/page-63.jpg"
     ],
-    "report": "يعرض القسم الجهود المرتبطة بالصحة المدرسية والتوعية والسلوكيات الصحية داخل المجتمع المدرسي."
+    "report": "يعرض القسم الجهود المرتبطة بالصحة المدرسية والتوعية والسلوكيات الصحية داخل المجتمع المدرسي.",
+    "salamaVisual": "assets/salama-panels/workshops.jpg"
   },
   {
     "id": "fun",
@@ -304,6 +316,7 @@ window.REPORTS=[
       "assets/pages/page-70.jpg",
       "assets/pages/page-71.jpg"
     ],
-    "report": "يقدم القسم مساحة خفيفة للتسلية والمعرفة، تعزز التفاعل مع المجلة بطريقة ممتعة."
+    "report": "يقدم القسم مساحة خفيفة للتسلية والمعرفة، تعزز التفاعل مع المجلة بطريقة ممتعة.",
+    "salamaVisual": "assets/salama-panels/learning.jpg"
   }
 ];

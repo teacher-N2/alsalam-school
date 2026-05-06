@@ -214,3 +214,80 @@ button{
     grid-template-columns:1fr;
   }
 }
+
+/* Salama section panel and iPhone navigation improvements */
+.mobile-current-section{
+  margin:1rem 0 .75rem;
+  padding:.85rem 1rem;
+  border-radius:18px;
+  background:linear-gradient(135deg,rgba(183,15,32,.10),rgba(232,184,78,.14));
+  border:1px solid var(--line);
+  font-weight:900;
+  color:var(--muted);
+}
+.mobile-current-section b{
+  color:var(--red);
+}
+.section-cover > img,
+.portal-card > img,
+.report-card > img{
+  object-position:center top;
+}
+.tab-content{
+  position:relative;
+}
+.tab-content::before{
+  content:"";
+  display:block;
+  height:1px;
+}
+@media(max-width:760px){
+  .tabs-shell{
+    display:block;
+    padding:.75rem;
+  }
+  .side-tabs{
+    position:sticky;
+    top:88px;
+    z-index:50;
+    background:var(--glass);
+    backdrop-filter:blur(16px);
+    border:1px solid var(--line);
+    border-radius:22px;
+    padding:.6rem;
+    margin-bottom:1rem;
+    box-shadow:0 18px 55px rgba(78,18,30,.12);
+  }
+  .tab-btn{
+    min-width:165px;
+    min-height:76px;
+    border-radius:18px;
+  }
+  .tab-content{
+    scroll-margin-top:190px;
+    border:1px solid var(--line);
+    border-radius:26px;
+    padding:.8rem;
+    background:rgba(255,255,255,.28);
+  }
+  .dark .tab-content{
+    background:rgba(255,255,255,.04);
+  }
+  .section-cover > img{
+    min-height:310px;
+    max-height:390px;
+    width:100%;
+    object-fit:cover;
+    object-position:center top;
+  }
+  .salama-badge{
+    display:none;
+  }
+  .tab-report h2{
+    font-size:1.65rem;
+  }
+  .mobile-current-section{
+    display:block;
+    text-align:center;
+  }
+}
