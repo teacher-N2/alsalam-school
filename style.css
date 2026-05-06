@@ -180,3 +180,62 @@ footer .sig{display:none!important}
     height:180px!important;
   }
 }
+
+/* Ultra clean global tabs */
+.mini-salama,
+.portal-card .overlay img{
+ display:none!important;
+}
+.portal-card{
+ overflow:hidden;
+ position:relative;
+}
+.portal-card::after{
+ content:'';
+ position:absolute;
+ inset:0;
+ background:linear-gradient(to top,rgba(28,8,18,.72),rgba(28,8,18,.06) 58%);
+ pointer-events:none;
+}
+.portal-card .overlay{
+ z-index:2;
+ background:transparent!important;
+ align-items:flex-end!important;
+}
+.portal-card h3{
+ font-size:1.65rem!important;
+ margin-bottom:.45rem!important;
+ text-shadow:0 4px 18px rgba(0,0,0,.35);
+}
+.portal-card p{
+ font-size:1rem!important;
+ opacity:.95;
+ text-shadow:0 3px 10px rgba(0,0,0,.25);
+}
+.portal-card img{
+ height:320px!important;
+ object-fit:cover!important;
+}
+.hero-visual img{
+ object-fit:cover;
+ object-position:center;
+}
+.icon-3d{
+ width:58px;
+ height:58px;
+ border-radius:18px;
+ display:grid;
+ place-items:center;
+ background:linear-gradient(145deg,#ffffff,#f2e3b4);
+ box-shadow:0 12px 30px rgba(0,0,0,.18);
+ font-size:1.8rem;
+ margin-bottom:1rem;
+}
+@media(max-width:760px){
+ .portal-card img{
+   height:230px!important;
+ }
+ .portal-card h3{
+   font-size:1.25rem!important;
+ }
+}
