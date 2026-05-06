@@ -128,114 +128,163 @@ main{padding:0 5vw 4rem}.hero{min-height:78vh;display:grid;grid-template-columns
   .section-cover > img{min-height:250px}
 }
 
-/* Qatari Salama cards - no foreign flags */
-footer .sig{display:none!important}
-.portal-card img,.section-cover > img{object-fit:cover;object-position:center}
-.portal-card .overlay{background:linear-gradient(to top,rgba(55,5,15,.72),rgba(55,5,15,.06) 62%)}
-.salama-badge img{object-position:center top}
-
-
-/* Refined elegant tabs */
-.portal-tabs{
-  gap:1.2rem!important;
+/* Mobile speed and iPhone responsiveness */
+*{
+  -webkit-tap-highlight-color: transparent;
 }
-.portal-card{
-  border-radius:28px!important;
-  overflow:hidden;
-  background:rgba(255,252,247,.92)!important;
-  border:1px solid rgba(120,13,42,.08)!important;
-  box-shadow:0 12px 40px rgba(0,0,0,.08)!important;
-  transition:all .28s ease;
+img{
+  content-visibility:auto;
+  will-change:transform;
+  backface-visibility:hidden;
 }
-.portal-card:hover{
-  transform:translateY(-6px);
-  box-shadow:0 24px 60px rgba(0,0,0,.16)!important;
+.tab-btn,
+.portal-card,
+.tab-pages img,
+.page-thumb,
+.gallery-item,
+button{
+  touch-action: manipulation;
 }
-.portal-card img{
-  height:230px!important;
-  object-fit:cover!important;
+.tab-btn{
+  min-height:58px;
 }
-.portal-card .overlay{
-  padding:1.2rem!important;
-  background:linear-gradient(to top,rgba(31,10,20,.74),rgba(31,10,20,.08) 58%)!important;
+.tab-content{
+  scroll-margin-top:105px;
 }
-.portal-card h3{
-  font-size:1.45rem!important;
+.tab-pages.compact{
+  grid-template-columns:repeat(4,1fr);
 }
-.portal-card p{
-  opacity:.95;
-}
-.mini-salama{
-  width:72px!important;
-  height:72px!important;
-  border-radius:22px!important;
-  border:2px solid rgba(255,255,255,.9)!important;
-}
-.hero p{
-  max-width:900px;
-  line-height:2;
+.more-btn{
+  margin-top:1rem;
+  width:100%;
+  border:none;
+  border-radius:18px;
+  padding:.9rem 1rem;
+  background:linear-gradient(135deg,var(--red),var(--maroon));
+  color:white;
+  font-weight:900;
+  box-shadow:var(--shadow);
+  cursor:pointer;
 }
 @media(max-width:760px){
-  .portal-card img{
-    height:180px!important;
+  .tabs-shell{
+    gap:.75rem;
+    padding:.7rem;
+  }
+  .side-tabs{
+    display:flex;
+    overflow-x:auto;
+    gap:.55rem;
+    padding-bottom:.25rem;
+    scroll-snap-type:x mandatory;
+  }
+  .tab-btn{
+    min-width:154px;
+    scroll-snap-align:start;
+    justify-content:center;
+    flex-direction:column;
+    gap:.25rem;
+    font-size:.95rem;
+  }
+  .tab-icon{
+    width:42px;
+    height:42px;
+  }
+  .tab-content{
+    min-height:auto;
+  }
+  .tab-hero.enhanced{
+    gap:.8rem;
+  }
+  .section-cover > img{
+    min-height:210px;
+    max-height:280px;
+    object-fit:cover;
+  }
+  .tab-report{
+    padding:1rem;
+  }
+  .tab-pages.compact{
+    grid-template-columns:repeat(2,1fr);
+  }
+  .tab-pages img{
+    height:170px;
+  }
+  .portal-tabs{
+    grid-template-columns:1fr;
   }
 }
 
-/* Ultra clean global tabs */
+/* Final clean Qatari Salama tabs - light and iPhone friendly */
 .mini-salama,
-.portal-card .overlay img{
- display:none!important;
+.salama-badge{
+  display:none!important;
+}
+.portal-tabs{
+  gap:1rem!important;
 }
 .portal-card{
- overflow:hidden;
- position:relative;
+  min-height:0!important;
+  height:auto!important;
+  border-radius:26px!important;
+  overflow:hidden!important;
+  border:1px solid rgba(130,20,45,.10)!important;
+  background:#fff8ee!important;
+  box-shadow:0 12px 36px rgba(70,20,30,.10)!important;
+  transition:transform .22s ease, box-shadow .22s ease!important;
 }
-.portal-card::after{
- content:'';
- position:absolute;
- inset:0;
- background:linear-gradient(to top,rgba(28,8,18,.72),rgba(28,8,18,.06) 58%);
- pointer-events:none;
-}
-.portal-card .overlay{
- z-index:2;
- background:transparent!important;
- align-items:flex-end!important;
-}
-.portal-card h3{
- font-size:1.65rem!important;
- margin-bottom:.45rem!important;
- text-shadow:0 4px 18px rgba(0,0,0,.35);
-}
-.portal-card p{
- font-size:1rem!important;
- opacity:.95;
- text-shadow:0 3px 10px rgba(0,0,0,.25);
+.portal-card:hover{
+  transform:translateY(-5px)!important;
+  box-shadow:0 20px 52px rgba(70,20,30,.16)!important;
 }
 .portal-card img{
- height:320px!important;
- object-fit:cover!important;
+  width:100%!important;
+  height:230px!important;
+  object-fit:cover!important;
+  object-position:center!important;
 }
-.hero-visual img{
- object-fit:cover;
- object-position:center;
+.portal-card .overlay{
+  position:static!important;
+  background:#7a0f29!important;
+  color:#fff!important;
+  padding:.75rem .9rem!important;
+  min-height:66px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  text-align:center!important;
 }
-.icon-3d{
- width:58px;
- height:58px;
- border-radius:18px;
- display:grid;
- place-items:center;
- background:linear-gradient(145deg,#ffffff,#f2e3b4);
- box-shadow:0 12px 30px rgba(0,0,0,.18);
- font-size:1.8rem;
- margin-bottom:1rem;
+.portal-card .overlay h3{
+  margin:0!important;
+  font-size:1.15rem!important;
+  line-height:1.45!important;
+  text-shadow:none!important;
+}
+.portal-card .overlay p,
+.portal-card .overlay .icon-3d{
+  display:none!important;
+}
+.section-cover > img{
+  object-fit:cover!important;
+  object-position:center!important;
+}
+footer .sig{
+  display:none!important;
+}
+.tab-btn{
+  touch-action:manipulation;
 }
 @media(max-width:760px){
- .portal-card img{
-   height:230px!important;
- }
- .portal-card h3{
-   font-size:1.25rem!important;
- }
+  .portal-tabs{
+    grid-template-columns:1fr!important;
+  }
+  .portal-card img{
+    height:190px!important;
+  }
+  .portal-card .overlay{
+    min-height:58px!important;
+  }
+  .portal-card .overlay h3{
+    font-size:1.05rem!important;
+  }
 }

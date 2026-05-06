@@ -135,7 +135,7 @@ window.REPORTS=[
     "title": "شهر رمضان",
     "subtitle": "قيم وروحانية وتنافس",
     "icon": "🌙",
-    "cover": "assets/tab-covers/ramadan.jpg",
+    "cover": "assets/tab-covers/overview.jpg",
     "pages": [
       32,
       33
@@ -205,7 +205,7 @@ window.REPORTS=[
     "title": "الرحلات المدرسية",
     "subtitle": "تعلم خارج الصف",
     "icon": "🚌",
-    "cover": "assets/tab-covers/trips.jpg",
+    "cover": "assets/tab-covers/sports.jpg",
     "pages": [
       49,
       50,
@@ -223,7 +223,7 @@ window.REPORTS=[
     "title": "ورش ومحاضرات",
     "subtitle": "توعية وشراكة",
     "icon": "🩺",
-    "cover": "assets/tab-covers/workshops.jpg",
+    "cover": "assets/tab-covers/learning.jpg",
     "pages": [
       52,
       53,
@@ -245,7 +245,7 @@ window.REPORTS=[
     "title": "المسابقات",
     "subtitle": "منافسة وإبداع",
     "icon": "🎖️",
-    "cover": "assets/tab-covers/competitions.jpg",
+    "cover": "assets/tab-covers/honor.jpg",
     "pages": [
       57,
       58,
@@ -265,7 +265,7 @@ window.REPORTS=[
     "title": "الصحة المدرسية",
     "subtitle": "وعي وسلامة",
     "icon": "💚",
-    "cover": "assets/tab-covers/health.jpg",
+    "cover": "assets/tab-covers/research.jpg",
     "pages": [
       61,
       62,
@@ -283,7 +283,7 @@ window.REPORTS=[
     "title": "تسالي",
     "subtitle": "متعة ومعرفة",
     "icon": "🎲",
-    "cover": "assets/tab-covers/fun.jpg",
+    "cover": "assets/tab-covers/learning.jpg",
     "pages": [
       64,
       65,
