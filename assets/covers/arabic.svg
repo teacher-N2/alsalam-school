@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#65121e"/><stop offset=".55" stop-color="#a71327"/><stop offset="1" stop-color="#f0bd54"/></linearGradient>
+<radialGradient id="r" cx="72%" cy="10%" r="65%"><stop offset="0" stop-color="#fff6c7" stop-opacity=".9"/><stop offset=".45" stop-color="#fff6c7" stop-opacity=".18"/><stop offset="1" stop-color="#fff6c7" stop-opacity="0"/></radialGradient>
+<filter id="s"><feDropShadow dx="0" dy="24" stdDeviation="22" flood-color="#25050b" flood-opacity=".35"/></filter>
+</defs>
+<rect width="1200" height="720" rx="56" fill="url(#g)"/>
+<rect x="0" y="0" width="1200" height="720" rx="56" fill="url(#r)"/>
+<path d="M0 0 C160 140 310 96 470 0Z" fill="#d7192e" opacity=".92"/>
+<path d="M1200 0 C1040 140 890 96 730 0Z" fill="#d7192e" opacity=".92"/>
+<path d="M0 620 C230 500 370 720 560 600 C760 474 880 640 1200 520 L1200 720 L0 720Z" fill="#fff6d5" opacity=".14"/>
+<g filter="url(#s)">
+<rect x="125" y="118" width="950" height="132" rx="38" fill="#fff7db" opacity=".96"/>
+<rect x="178" y="151" width="844" height="66" rx="23" fill="#a80f22"/>
+<text x="600" y="196" text-anchor="middle" font-family="Tahoma, Arial" font-size="46" font-weight="700" fill="#fff">قسم اللغة العربية</text>
+</g>
+<g filter="url(#s)">
+<circle cx="240" cy="448" r="92" fill="#fff7db" opacity=".96"/>
+<text x="240" y="480" text-anchor="middle" font-family="Tahoma, Arial" font-size="88" font-weight="700" fill="#a80f22">ض</text>
+</g>
+<text x="1010" y="420" text-anchor="end" font-family="Tahoma, Arial" font-size="42" font-weight="700" fill="#fff7db">لغة وهوية وإبداع</text>
+<text x="1010" y="482" text-anchor="end" font-family="Tahoma, Arial" font-size="26" fill="#fff7db" opacity=".9">روضة ومدرسة السلام الابتدائية للبنات</text>
+</svg>
