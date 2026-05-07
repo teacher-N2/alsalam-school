@@ -1,1 +1,1 @@
-ارفعي محتويات هذا المجلد مباشرة إلى GitHub Pages: index.html, magazine.html, style.css, script.js, data.js, assets
+ارفع محتويات هذا المجلد مباشرة إلى GitHub Pages. الشعار الصحيح داخل assets/img/school-logo.jpg
